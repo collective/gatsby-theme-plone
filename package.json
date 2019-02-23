@@ -37,10 +37,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/collective/gatsby-starter-plone"
+    "url": "https://github.com/iFlameing/gatsby-theme-plone"
   },
   "bugs": {
-    "url": "https://github.com/collective/gatsby-starter-plone/issues"
+    "url": "https://github.com/iFlameing/gatsby-theme-plone"
   },
-  "homepage": "https://github.com/collective/gatsby-starter-plone#readme"
+  "homepage": "https://github.com/iFlameing/gatsby-theme-plone"
 }
