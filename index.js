@@ -1,0 +1,1 @@
+export { default as RichText } from './src/components/RichText.js';
