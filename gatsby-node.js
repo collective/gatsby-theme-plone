@@ -55,3 +55,17 @@ exports.createPages = async ({ graphql, actions }) => {
       });
     });
 };
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.js$/,
+          include: path.dirname(require.resolve('gatsby-theme-wiki')),
+          use: [loaders.js()],
+        },
+      ],
+    },
+  });
+};
