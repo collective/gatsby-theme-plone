@@ -6,6 +6,21 @@
 
 const path = require('path');
 
+
+exports.onCreateWebpackConfig = ({ stage, loaders, plugins, actions }) => {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.js$/,
+          include: path.dirname(require.resolve("gatsby-theme-plone")),
+          use: [loaders.js()]
+        }
+      ]
+    }
+  });
+};
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
@@ -56,16 +71,3 @@ exports.createPages = async ({ graphql, actions }) => {
     });
 };
 
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          include: path.dirname(require.resolve('gatsby-theme-wiki')),
-          use: [loaders.js()],
-        },
-      ],
-    },
-  });
-};
