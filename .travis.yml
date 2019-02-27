@@ -1,0 +1,21 @@
+language: node_js
+node_js: 10.1.0
+cache:
+  yarn: true
+  directories:
+  - "./tests/gatsby-plone-site/.cache"
+  - "./tests/gatsby-plone-site/public"
+before_install:
+  - cd tests/gatsby-plone-site
+install: yarn install
+before_script: sed -i "s|'/',|'/gatsby-theme-plone/',|" ./gatsby-config.js
+script: "./node_modules/.bin/gatsby build --prefix-paths"
+deploy:
+  provider: pages
+  github-token: "$GITHUB_TOKEN"
+  local-dir: "./tests/gatsby-plone-site/public"
+  target-branch: gh-pages
+  keep-history: false
+  skip-cleanup: true
+  on:
+    branch: master
