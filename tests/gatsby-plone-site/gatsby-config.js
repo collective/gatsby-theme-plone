@@ -1,5 +1,5 @@
 module.exports = {
-    pathPrefix: "/tests/gatsby-plone-site",
+    pathPrefix: "/gatsby-theme-plone",
     __experimentalThemes: [
         {
             resolve : "gatsby-theme-plone",
