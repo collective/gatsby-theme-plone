@@ -51,7 +51,7 @@ gatsby-develop
 
 - steps for doing component shadowing
   1. Create src/gatsby-theme-plone/components folder
-  1. Put the component which you want to override
+  1. Put the component which you want to overwrite
 
 * currently we are using https://plonedemo.kitconcept.com/en as base url.
 * for any question please open a issue.
