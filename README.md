@@ -47,7 +47,7 @@ gatsby-develop
 
 # Doing component shadowing
 
-#### component shadowing a process in which we shadow a component provided by themes with the new ones. Basically component shadowing is a process in which we overwrite the content which theme provided bydefault.
+#### component shadowing is a process in which we shadow a component provided by themes with the new ones. Basically component shadowing is a process in which we overwrite the content which theme provided bydefault.
 
 - steps for doing component shadowing
   1. Create src/gatsby-theme-plone/components folder
