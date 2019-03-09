@@ -40,7 +40,7 @@ module.exports = {
 - And this is it just run
 
 ```bash
-gatsby-develop
+gatsby develop
 ```
 
 - You should see a plone website at localhost:8000
