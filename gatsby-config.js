@@ -1,5 +1,5 @@
 const path = require('path')
-module.exports = {
+module.exports = options => ({
   siteMetadata: {
     title: 'Kickstart Gatsby static site development with Plone',
     subTitle: 'Plone + Gatsby = \u2764',
@@ -9,7 +9,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-plone',
       options: {
-        baseUrl: 'https://plonedemo.kitconcept.com/en',
+        baseUrl: options.baseUrl ? options.baseUrl : 'https://plonedemo.kitconcept.com/en',
+        token: options.token ? options.token : '',
         logLevel: 'DEBUG',
       },
     },
@@ -42,4 +43,4 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
   ],
-};
+});
