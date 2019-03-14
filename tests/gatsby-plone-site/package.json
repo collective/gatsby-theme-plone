@@ -8,10 +8,8 @@
     "develop": "gatsby develop --no-cache",
     "build": "gatsby build"
   },
-  "dependencies": {
-    "gatsby": "^2.1.4",
-    "gatsby-theme-plone": "1.0.3",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2"
+  "devDependencies": {
+    "gatsby": "^2.1.32",
+    "gatsby-theme-plone": "git+https://github.com/collective/gatsby-theme-plone"
   }
 }

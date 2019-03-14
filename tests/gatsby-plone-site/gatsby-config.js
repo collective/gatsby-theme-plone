@@ -3,7 +3,9 @@ module.exports = {
     __experimentalThemes: [
         {
             resolve : "gatsby-theme-plone",
-            options : {},
+            options: {
+                baseUrl: 'https://plonedemo.kitconcept.com/en'
+            }
 
         }
     ]
