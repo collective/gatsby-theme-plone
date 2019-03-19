@@ -54,6 +54,7 @@ component shadowing is a process in which we shadow a component provided by them
   1. Put the component which you want to overwrite
 
 * If you want to learn more about gatsby-theme go to this [url](https://www.gatsbyjs.org/blog/2018-11-11-introducing-gatsby-themes/)
+* You can also read the blog regarding the gatsby at this [link](https://www.gatsbyjs.org/blog)
 
 * currently we are using https://plonedemo.kitconcept.com/en as base url.
 * for any question please open a issue.
