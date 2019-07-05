@@ -21,7 +21,7 @@ const NavBar = ({ active }) => (
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-brand">
-            Gatsby Starter Plone
+            Gatsby Theme Plone
           </Link>
           <ol className="navbar-menu">
             <li className="navbar-item">
