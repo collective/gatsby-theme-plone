@@ -2,6 +2,9 @@
 
 Gatsby theme for Plone
 
+## Demo
+You can see the demo site at https://collective.github.io/gatsby-theme-plone/
+
 ## Install
 
 ```bash
