@@ -63,7 +63,6 @@ component shadowing is a process in which we shadow a component provided by them
 * for any question please open a issue.
 
 # How to pass a Custom Url for generating site.
-Note: This is not available in npm module right now.
 
 You can pass the custom url by passing the baseUrl property in options object during configuration of gatsby-theme-plone. 
 
